@@ -1,0 +1,16 @@
+.click-me, .no-click-me{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    font-size: larger;
+    font-family: 'Helvetica', 'Times New Roman', sans-serif;
+}
+
+.click-me{
+    background-color: black;
+    color: white;
+}
+
+.no-click-me{
+    background-color: yellow;
+}
