@@ -1,0 +1,15 @@
+{
+  "name": "the-odin-project",
+  "version": "1.0.0",
+  "description": "The whole course presented here for intermediate Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.0.2"
+  }
+}
