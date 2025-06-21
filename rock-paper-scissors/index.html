@@ -4,15 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ROCK PAPER SCISSORS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            height: 100vh;
+        }
+
+        main .choices {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            width: 50%;
+            font-size: 20px;
+        }
+
+        main .buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        main .buttons button {
+            width: 150px;
+            height: 150px;
+            font-size: 28px;
+        }
+
+        main .results {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            width: 50%;
+            font-size: 20px;
+        }
+
+        main .pedestal {
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        main .pedestal button {
+            display: none;
+        }
+
+        main .pedestal button.active {
+            display: block;
+            background: rgb(96, 1, 116);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            border: 2px solid rgb(76, 11, 136);
+        }
+    </style>
 </head>
 
 <body>
-    <script>
+    <main>
+        <div class="choices">
+            <div class="human-choice">
+                <p>You chose: <span>nothing</span></p>
+            </div>
+            <div class="computer-choice">
+                <p>Computer chose: <span>nothing</span></p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="rock">Rock</button>
 
-    </script>
+            <button class="paper">Paper</button>
+
+            <button class="scissors">Scissors</button>
+        </div>
+        <div class="results">
+            <div class="human-points">
+                <p>Human points: <span>0</span></p>
+
+            </div>
+            <div class="computer-points">
+                <p>Computer points: <span>0</span></p>
+            </div>
+        </div>
+
+        <div class="pedestal">
+            <p>Who will win?</p>
+            <button class="play-again">Play Again?</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
-<h1>blabla</h1>
-<script src="script.js"></script>
+
+
+
 
 </html>
